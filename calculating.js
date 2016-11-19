@@ -1,20 +1,20 @@
 // calculator function isolated to reduce duplicity
-function calculate(theArgs){
-  if(theArgs.length === 0){
+function calculate(input){
+  if(!input){
     return this.number;
   } else {
-    switch (theArgs[0].operator){
+    switch (input.operator){
        case 'plus':
-         return this.number + theArgs[0].number;
+         return this.number + input.number;
          break;
        case 'minus':
-         return this.number - theArgs[0].number;
+         return this.number - input.number;
          break;
        case 'times':
-         return this.number * theArgs[0].number;
+         return this.number * input.number;
          break;
        case 'dividedBy':
-         return this.number / theArgs[0].number;
+         return this.number / input.number;
          break;
       default: throw 'invalid operatoration';
     }
@@ -25,54 +25,54 @@ function calculate(theArgs){
   the numbers
 */
 
-function zero(...theArgs) {
+function zero(input) {
   this.number = 0;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function one(...theArgs) {
+function one(input) {
   this.number = 1;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function two(...theArgs) {
+function two(input) {
   this.number = 2;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function three(...theArgs) {
+function three(input) {
   this.number = 3;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function four(...theArgs) {
+function four(input) {
   this.number = 4;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function five(...theArgs) {
+function five(input) {
   this.number = 5;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function six(...theArgs) {
+function six(input) {
   this.number = 6;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function seven(...theArgs) {
+function seven(input) {
   this.number = 7;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function eight(...theArgs) {
+function eight(input) {
   this.number = 8;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
-function nine(...theArgs) {
+function nine(input) {
   this.number =  9;
-  return calculate(theArgs);
+  return calculate(input);
 }
 
 /*
